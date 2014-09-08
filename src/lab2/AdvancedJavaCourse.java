@@ -77,6 +77,9 @@ public class AdvancedJavaCourse implements Course{
         }
         this.courseName = courseName;
     }
-
-    
+    @Override
+    public String toString(){
+        return "Advanced Java Course: " + this.getCourseName() + "\n Course num: " + this.getCourseNumber() + "\n Credits: " 
+                + this.getCredits() + "\n Prerequisites: " + this.getPrerequisites();
+    }    
 }

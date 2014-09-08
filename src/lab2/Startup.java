@@ -38,11 +38,8 @@ public class Startup {
         System.out.println(IntPro.toString());
         
         /**
-         * I think this architecture can be useful if an interface doesn't 
-         * want to be used and you would want to save room on writing code.
-         * I would prefer to use an interface.  In this instance most of the subclasses
-         * use the exact same properties so using an abstract class is handy, but an
-         * interface would work well too.
+         * I think this architecture is much more useful to use than abstract methods.  
+         * This way all methods must be overridden to suit the needs of each subclass
          * 
          * Using the Liskov substitution principle in this case is advantageous for the courses
          * That do not have prerequisites, it won't work for the ones that do.

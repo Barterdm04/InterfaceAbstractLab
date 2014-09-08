@@ -19,5 +19,7 @@ public interface Course {
     public void setCourseNumber(String courseNumber);
     public abstract double getCredits();
     public void setCredits(double credits);
+    @Override
+    public abstract String toString();
     
 }

@@ -57,6 +57,10 @@ public class IntroJavaCourse implements Course{
     public void setPrerequisites(String prerequisites) {
         this.prerequisites = prerequisites;
     }
-
-    
+    @Override
+    public String toString(){
+        return "Introduction to Java Course: " + this.getCourseName() + "\n Course num: " + this.getCourseNumber() + "\n Credits: " 
+                + this.getCredits() + "\n Prerequisites: " + this.getPrerequisites();
+    }
+ 
 }

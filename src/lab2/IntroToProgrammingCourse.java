@@ -59,6 +59,10 @@ public class IntroToProgrammingCourse implements Course{
         }
         this.courseName = courseName;
     }
-
+    @Override
+    public String toString(){
+        return "Introduction to Programming Course: " + this.getCourseName() + "\n Course num: " + this.getCourseNumber() + "\n Credits: " 
+                + this.getCredits();
+    }
     
 }
